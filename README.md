@@ -4,7 +4,7 @@ A simple programming tutor for students and people interested in learning Python
 
 ## Screenshots
 
-![Explain tab](screenshots/explaination.png)
+![Explain tab](screenshots/explanation.png)
 
 ![Generate exercise tab](screenshots/exercise.png)
 
