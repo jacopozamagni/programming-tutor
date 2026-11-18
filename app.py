@@ -1,9 +1,22 @@
 from test_api import explain_concept, generate_exercise, check_code
 import streamlit as st
 
-st.title("Python Tutor")
+st.set_page_config(page_title="Python Tutor", page_icon="🐍", layout="wide")
 st.caption("This tool runs using AI, always check the answers")
+with st.sidebar:
+    st.title("Python Tutor")
+    st.markdown(
+        """
+        This app helps you learn Python by explaining concepts, generating exercises, and checking your code.
+        """
+    )
+    st.divider()
+    st.text("You can use the tabs above to navigate between explaining concepts, generating exercises, and checking your code.")
+    st.divider()
+    st.info("**Note:** This app uses AI to generate explanations and exercises. Always verify the answers and code provided.")
 tab1, tab2, tab3 = st.tabs(["Explain Concept", "Generate Exercise", "Check Code"])
+st.divider()
+st.caption("Made by Jacopo · Powered by Groq · The tutor can make mistakes, always check the answers.")
 
 with tab1:
     st.header("Explain Concept")
